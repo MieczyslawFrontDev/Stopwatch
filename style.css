@@ -78,3 +78,14 @@ button {
   cursor: pointer;
   transition: background-color 0.3s;
 }
+
+.history {
+  flex-grow: 1;
+  text-transform: uppercase;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--first-color);
+  outline: none;
+}
