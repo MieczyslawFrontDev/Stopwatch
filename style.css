@@ -11,6 +11,11 @@ html {
   padding: 0;
 }
 
+:root {
+  --first-color: rgb(255, 20, 6);
+  --second-color: rgb(210, 199, 190);
+}
+
 body {
   display: flex;
   flex-direction: column;
