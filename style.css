@@ -1,0 +1,39 @@
+html {
+  font-family: "Montserrat";
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #333;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  width: 800px;
+  background-image: radial-gradient(
+    circle,
+    rgb(43, 43, 46) 0%,
+    rgb(25, 25, 25, 93%)
+  );
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px black;
+  color: #fff;
+}
