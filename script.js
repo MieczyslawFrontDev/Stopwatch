@@ -5,10 +5,13 @@ const resetBtn = document.querySelector(".reset");
 const historyBtn = document.querySelector(".history");
 const stopwatch = document.querySelector(".stopwatch");
 const time = document.querySelector(".time");
+const timeList = document.querySelector(".time-list");
 
 let countTime;
 let minutes = 0;
 let seconds = 0;
+
+let timesArr = [];
 
 const handleStart = () => {
   clearInterval(countTime);
@@ -30,17 +33,29 @@ const handlePause = () => {
   clearInterval(countTime);
 };
 
-const handleStop = () => {
+const clearStuff = () => {
   clearInterval(countTime);
-  if (stopwatch.textContent !== "0:00") {
-    time.style.visibility = "visible";
-  }
-  time.textContent = `Ostatni czas: ${stopwatch.textContent}`;
-
   stopwatch.textContent = "0:00";
   timeList.textContent = "";
   seconds = 0;
   minutes = 0;
+};
+
+const handleStop = () => {
+  clearInterval(countTime);
+  if (stopwatch.textContent !== "0:00") {
+    time.style.visibility = "visible";
+    timesArr.push(stopwatch.textContent);
+  }
+  time.textContent = `Ostatni czas: ${stopwatch.textContent}`;
+
+  clearStuff();
+};
+
+const handleReset = () => {
+  time.style.visibility = "hidden";
+  timesArr = [];
+  clearStuff();
 };
 
 startBtn.addEventListener("click", handleStart);
