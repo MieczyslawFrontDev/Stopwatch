@@ -72,3 +72,19 @@ pauseBtn.addEventListener("click", handlePause);
 stopBtn.addEventListener("click", handleStop);
 resetBtn.addEventListener("click", handleReset);
 historyBtn.addEventListener("click", handleHistory);
+
+const infoBtn = document.querySelector(".fa-question");
+const modalShadow = document.querySelector(".modal-shadow");
+const modal = document.querySelector(".modal");
+
+const showModal = () => {
+  if (modalShadow.style.display !== "block") {
+    modalShadow.style.display = "block";
+  } else {
+    modalShadow.style.display = "none";
+  }
+
+  modalShadow.classList.toggle("modal-animation");
+};
+
+infoBtn.addEventListener("click", showModal);
