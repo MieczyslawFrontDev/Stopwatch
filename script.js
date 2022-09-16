@@ -93,3 +93,12 @@ closeModalBtn.addEventListener("click", showModal);
 window.addEventListener("click", (e) =>
   e.target === modalShadow ? showModal() : false
 );
+
+const colorBtn = document.querySelector(".fa-paintbrush");
+const colors = document.querySelector(".colors");
+
+const showColors = () => {
+  colors.classList.toggle("show-colors");
+};
+
+colorBtn.addEventListener("click", showColors);
