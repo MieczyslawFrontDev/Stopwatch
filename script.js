@@ -55,10 +55,10 @@ const handleStop = () => {
 const handleReset = () => {
   time.style.visibility = "hidden";
   timesArr = [];
-
   clearStuff();
 };
 
 startBtn.addEventListener("click", handleStart);
 pauseBtn.addEventListener("click", handlePause);
 stopBtn.addEventListener("click", handleStop);
+resetBtn.addEventListener("click", handleReset);
