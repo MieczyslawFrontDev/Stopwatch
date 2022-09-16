@@ -177,3 +177,16 @@ button:focus {
 .modal .close:hover {
   background-color: var(--first-color);
 }
+
+.modal-animation {
+  animation: show-modal 0.5s;
+}
+@keyframes show-modal {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
