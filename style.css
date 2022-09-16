@@ -213,3 +213,7 @@ button:focus {
   transition: background-color 0.3s, box-shadow 0.5s;
   background-color: #fff;
 }
+
+.show-colors {
+  opacity: 1;
+}
