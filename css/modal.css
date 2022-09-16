@@ -1,0 +1,106 @@
+.modal-shadow {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 360px;
+  padding: 30px 60px;
+  border-radius: 15px;
+  color: #fff;
+  background-color: rgb(43, 43, 46);
+}
+
+.modal h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.modal p {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.modal p i {
+  color: var(--first-color);
+}
+
+.modal p strong {
+  color: var(--first-color);
+}
+
+.modal .close {
+  display: block;
+  margin: 20px auto 0;
+  width: 200px;
+  border: 1px solid var(--first-color);
+  transition: background-color 0.3s;
+}
+
+.modal .close:hover {
+  background-color: var(--first-color);
+}
+
+.modal-animation {
+  animation: show-modal 0.5s;
+}
+
+@keyframes show-modal {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .modal {
+    font-size: 16px;
+    width: 470px;
+    height: 280px;
+    padding: 20px 40px;
+  }
+
+  .modal h3 {
+    font-size: 24px;
+  }
+
+  .modal p {
+    font-size: 16px;
+  }
+
+  .modal .close {
+    width: 150px;
+  }
+}
+@media (max-width: 480px) {
+  .modal {
+    font-size: 15px;
+    width: 350px;
+    height: 280px;
+    padding: 10px 20px;
+  }
+
+  .modal h3 {
+    font-size: 20px;
+  }
+
+  .modal p {
+    font-size: 14px;
+  }
+
+  .modal .close {
+    width: 120px;
+  }
+}

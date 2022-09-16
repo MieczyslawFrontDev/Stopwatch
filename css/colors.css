@@ -1,0 +1,67 @@
+.colors {
+  position: absolute;
+  right: 20px;
+  top: 112px;
+  width: 60px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+.color {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.5s;
+  background-color: #fff;
+}
+
+.show-colors {
+  opacity: 1;
+}
+
+.one {
+  background-color: rgb(250, 20, 6);
+}
+
+.two {
+  background-color: rgb(6, 173, 250);
+}
+
+.three {
+  background-color: rgb(0, 255, 42);
+}
+
+.one:hover {
+  box-shadow: 0 0 10px rgb(250, 20, 6);
+}
+
+.two:hover {
+  box-shadow: 0 0 10px rgb(6, 173, 250);
+}
+
+.three:hover {
+  box-shadow: 0 0 10px rgb(0, 255, 42);
+}
+@media (max-width: 767px) {
+  .colors {
+    right: -2px;
+    top: 93px;
+    height: 180px;
+  }
+
+  .color {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .colors {
+    top: 84px;
+  }
+}

@@ -1,0 +1,44 @@
+.info i {
+  font-size: 24px;
+  position: absolute;
+  top: 6px;
+  right: 14px;
+  padding: 20px;
+  font-size: 25px;
+  color: var(--second-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.info i:hover {
+  color: var(--first-color);
+}
+
+.info .fa-question {
+  right: 14px;
+}
+
+.info .fa-paintbrush {
+  right: 50px;
+}
+
+@media (max-width: 767px) {
+  .info i {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .info .fa-paintbrush {
+    right: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info i {
+    padding: 5px;
+    font-size: 16px;
+  }
+  .info .fa-paintbrush {
+    right: 40px;
+  }
+}
