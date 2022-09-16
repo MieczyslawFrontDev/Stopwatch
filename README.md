@@ -3,4 +3,9 @@
 This is a stopwatch app with which you can measure time. All measured times are saved in the archive.
 The stopwatch also has a reset function and the function of changing the theme color ;)
 
-## ![Animation]([./stopwatch animation.gif](https://github.com/MieczyslawFrontDev/Stopwatch/blob/main/stopwatch%20animation.gif?raw=true))
+![stopwatch animation](https://user-images.githubusercontent.com/93486966/190536737-edafff5e-2cbf-48c3-8894-a7b6f4c2454b.gif)
+
+## Technologies
+1. HTML
+2. CSS
+3. JavaScript ES6+
