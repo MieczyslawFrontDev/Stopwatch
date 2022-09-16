@@ -76,6 +76,7 @@ historyBtn.addEventListener("click", handleHistory);
 const infoBtn = document.querySelector(".fa-question");
 const modalShadow = document.querySelector(".modal-shadow");
 const modal = document.querySelector(".modal");
+const closeModalBtn = document.querySelector(".close");
 
 const showModal = () => {
   if (modalShadow.style.display !== "block") {
@@ -88,3 +89,7 @@ const showModal = () => {
 };
 
 infoBtn.addEventListener("click", showModal);
+closeModalBtn.addEventListener("click", showModal);
+window.addEventListener("click", (e) =>
+  e.target === modalShadow ? showModal() : false
+);
