@@ -102,3 +102,18 @@ const showColors = () => {
 };
 
 colorBtn.addEventListener("click", showColors);
+
+let root = document.documentElement;
+const redColor = document.querySelector(".one");
+const blueColor = document.querySelector(".two");
+const greenColor = document.querySelector(".three");
+
+redColor.addEventListener("click", () => {
+  root.style.setProperty("--first-color", "rgb(250, 20, 6)");
+});
+blueColor.addEventListener("click", () => {
+  root.style.setProperty("--first-color", "rgb(6, 173, 250)");
+});
+greenColor.addEventListener("click", () => {
+  root.style.setProperty("--first-color", "rgb(0, 255, 42)");
+});
