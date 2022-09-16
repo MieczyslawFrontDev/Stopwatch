@@ -217,3 +217,27 @@ button:focus {
 .show-colors {
   opacity: 1;
 }
+
+.one {
+  background-color: rgb(250, 20, 6);
+}
+
+.two {
+  background-color: rgb(6, 173, 250);
+}
+
+.three {
+  background-color: rgb(0, 255, 42);
+}
+
+.one:hover {
+  box-shadow: 0 0 8px rgb(250, 20, 6);
+}
+
+.two:hover {
+  box-shadow: 0 0 8px rgb(6, 173, 250);
+}
+
+.three:hover {
+  box-shadow: 0 0 8px rgb(0, 255, 42);
+}
