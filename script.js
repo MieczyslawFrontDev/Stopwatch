@@ -33,6 +33,14 @@ const handlePause = () => {
   clearInterval(countTime);
 };
 
+const clearStuff = () => {
+  clearInterval(countTime);
+  stopwatch.textContent = "0:00";
+  timeList.textContent = "";
+  seconds = 0;
+  minutes = 0;
+};
+
 const handleStop = () => {
   if (stopwatch.textContent !== "0:00") {
     time.style.visibility = "visible";
@@ -41,22 +49,14 @@ const handleStop = () => {
 
   time.textContent = `Ostatni czas: ${stopwatch.textContent}`;
 
-  clearInterval(countTime);
-  stopwatch.textContent = "0:00";
-  timeList.textContent = "";
-  seconds = 0;
-  minutes = 0;
+  clearStuff();
 };
 
 const handleReset = () => {
   time.style.visibility = "hidden";
   timesArr = [];
 
-  clearInterval(countTime);
-  stopwatch.textContent = "0:00";
-  timeList.textContent = "";
-  seconds = 0;
-  minutes = 0;
+  clearStuff();
 };
 
 startBtn.addEventListener("click", handleStart);
