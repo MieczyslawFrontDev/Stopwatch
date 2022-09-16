@@ -114,6 +114,18 @@ button:focus {
   outline: none;
 }
 
+.time-list li {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  color: var(--second-color);
+  font-size: 22px;
+}
+
+.time-list span {
+  font-weight: bold;
+}
+
 .modal-shadow {
   display: none;
   position: absolute;
