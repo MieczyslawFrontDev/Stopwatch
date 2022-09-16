@@ -58,7 +58,17 @@ const handleReset = () => {
   clearStuff();
 };
 
+const handleHistory = () => {
+  timeList.textContent = "";
+  timesArr.forEach((time, index) => {
+    const newListItem = document.createElement("li");
+    newListItem.innerHTML = `Pomiar nr ${index + 1}: <span>${time} s</span>`;
+    timeList.appendChild(newListItem);
+  });
+};
+
 startBtn.addEventListener("click", handleStart);
 pauseBtn.addEventListener("click", handlePause);
 stopBtn.addEventListener("click", handleStop);
 resetBtn.addEventListener("click", handleReset);
+historyBtn.addEventListener("click", handleHistory);
